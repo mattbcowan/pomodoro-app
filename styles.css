@@ -1,1 +1,7 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
 
+.timer--navigation > ul {
+  list-style: none;
+}
