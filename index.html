@@ -27,8 +27,21 @@
       <section>
         <div class="timer--container">
           <div class="timer--inner-circle">
-            <div class="timer--time">17:59</div>
-            <button class="timer--start-button">start</button>
+            <div class="timer--timer">
+              <svg
+                class="timer--timer-svg"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g class="timer--timer-circle">
+                  <circle class="timer--time-elapsed" cx="50" cy="50" r="45" />
+                </g>
+              </svg>
+              <span class="timer--label">
+                <div class="timer--time">17:59</div>
+                <button class="timer--start-button">start</button>
+              </span>
+            </div>
           </div>
         </div>
       </section>
