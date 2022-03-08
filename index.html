@@ -19,17 +19,21 @@
     <main class="timer">
       <nav class="timer--navigation">
         <ul>
-          <li><button>pomodoro</button></li>
-          <li><button>short break</button></li>
-          <li><button>long break</button></li>
+          <li><button class="timer--button active-button">pomodoro</button></li>
+          <li><button class="timer--button">short break</button></li>
+          <li><button class="timer--button">long break</button></li>
         </ul>
       </nav>
       <section>
-        <div>17:59</div>
-        <button>start</button>
+        <div class="timer--container">
+          <div class="timer--inner-circle">
+            <div class="timer--time">17:59</div>
+            <button class="timer--start-button">start</button>
+          </div>
+        </div>
       </section>
       <section>
-        <button>
+        <button class="timer--button">
           <img src="./assets/icon-settings.svg" alt="settings" />
         </button>
       </section>
