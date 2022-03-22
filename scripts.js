@@ -57,6 +57,19 @@ const startTimer = () => {
   }, 1000);
 };
 
+const timerButtons = document.getElementsByClassName(
+  ".timer--navigation ul li button"
+);
+for (let i = 0; i < timerButtons.length; i++) {
+  timerButtons[i].onclick = function () {
+    let c = 0;
+    while (c < timerButtons.length) {
+      timerButtons[c++].className = "timer--button";
+    }
+    timerButtons[i].className = "timer--button active-button";
+  };
+}
+
 document.getElementById("current-time").innerHTML = `${formatTimeLeft(
   timeLeft
 )}`;
